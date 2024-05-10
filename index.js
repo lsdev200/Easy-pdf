@@ -1,4 +1,5 @@
- const express = require('express')
+const express = require('express')
+const pdfToTxt = require('./routes/pdf-to-txt')
 const bodyParser = require('body-parser')
 const mergeRouter = require('./routes/merge');
 const splitRouter = require('./routes/split');
@@ -12,9 +13,8 @@ const pdfToExcel = require('./routes/pdftoexcel')
 const pdfToPpt = require('./routes/pdf-to-ppt')
 const pdfToPng = require('./routes/pdf-to-png')
 const pdfToJpg = require('./routes/pdf-to-jpg')
-const pdfToJson = require('./routes/pdf-to-json');
 const pdfToTiff = require('./routes/pdf-to-tiff')
-const pdfToTxt = require('./routes/pdf-to-txt')
+const pdfToJson = require('./routes/pdf-to-json');
 const wordToPdf = require('./routes/word-to-pdf')
 const cors = require('cors');
 
